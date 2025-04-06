@@ -31,12 +31,19 @@ void enterNumber(int& varLink, string label) {
 
 void task1()
 {
-    //в разработке
+    cout << "Введите натуральное число: ";
+    cin >> X;
 }
 
 void task2()
 {
-    //в разработке
+    int max = 0;
+    while (X) {
+        if (X % 10 > max)
+            max = X % 10;
+        X /= 10;
+    }
+    cout << "Наибольшая цифра в записи числа X: " << max << endl;
 }
 
 void task3()
